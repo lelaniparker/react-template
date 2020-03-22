@@ -5,5 +5,30 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 400px;
+    width: 70%;
+    max-width: 400px;
+    z-index: 200;
+}
+
+.side-nav ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-nav li {
+    margin: 0.5rem 0;
+}
+
+.side-nav a {
+    color: #275cf0;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side-nav a:hover,
+.side-nav a:active {
+    color: #55d2cd;
 }
