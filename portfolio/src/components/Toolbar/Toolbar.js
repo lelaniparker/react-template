@@ -7,7 +7,7 @@ const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar_navigation">
             <div>
-                <HamburgerButton />
+                <HamburgerButton click={props.sideNavClickHandler} />
             </div>
             <div className="toolbar_logo"><a href="/" title="Go to Home page">LOGO</a></div>
             <div className="spacer"></div>
