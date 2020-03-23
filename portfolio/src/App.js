@@ -17,19 +17,21 @@ class App extends Component {
     });
   };
 
+  backdropClickHandler = () => {
+    this.setState({ sideNavOpen: false });
+  };
+
   render() {
-    let sideNav;
     let backdrop;
 
     if (this.state.sideNavOpen) {
-      sideNav = <SideNav />;
-      backdrop = <Backdrop />
+      backdrop = <Backdrop click={this.backdropClickHandler} />
     }
 
     return (
       <div className="App">
         <Toolbar sideNavClickHandler={this.sideNavToggleClickHandler} />
-        {sideNav}
+        <SideNav show={this.state.sideNavOpen} />
         {backdrop}
         <main className="Main">
           <p>This is a paragraph content</p>

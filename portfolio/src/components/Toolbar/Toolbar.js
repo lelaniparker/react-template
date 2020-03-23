@@ -6,7 +6,7 @@ import HamburgerButton from '../SideNav/HamburgerButton';
 const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar_navigation">
-            <div>
+            <div className="toolbar_toggle-button">
                 <HamburgerButton click={props.sideNavClickHandler} />
             </div>
             <div className="toolbar_logo"><a href="/" title="Go to Home page">LOGO</a></div>
